@@ -13,6 +13,14 @@ CONTENT = "Contribuição automática em " + str(datetime.date.today())
 # Nome do arquivo a ser criado
 FILENAME = f"contrib_{datetime.date.today()}.txt"
 
+# Caminho do arquivo de log
+LOG_FILE = "commit_diario.log"
+
+def log_event(message):
+    """Função para registrar eventos no arquivo de log"""
+    with open(LOG_FILE, "a") as log_file:
+        log_file.write(f"{datetime.datetime.now()} - {message}\n")
+
 def adicionar_e_enviar_arquivo():
     # Navegar até o repositório
     os.chdir(REPO_PATH)
@@ -26,7 +34,13 @@ def adicionar_e_enviar_arquivo():
     subprocess.run(["git", "commit", "-m", f"Adicionado {FILENAME}"])
     subprocess.run(["git", "push"])
 
-    print(f"Arquivo {FILENAME} adicionado e enviado ao repositório!")
+    log_event(f"Arquivo {FILENAME} adicionado e enviado ao repositório!")
+
+# Registrar o início da execução do script
+log_event("Início do script.")
+
+# Executar o commit e o push imediatamente quando o script rodar
+adicionar_e_enviar_arquivo()
 
 # Agendar a execução para começar às 9:00 e repetir a cada 2 horas
 schedule.every().day.at("09:00").do(adicionar_e_enviar_arquivo)

@@ -1,6 +1,8 @@
 import os
 import datetime
 import subprocess
+import schedule
+import time
 
 # Caminho do repositório local
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -11,7 +13,7 @@ CONTENT = "Contribuição automática em " + str(datetime.date.today())
 # Nome do arquivo a ser criado
 FILENAME = f"contrib_{datetime.date.today()}.txt"
 
-def main():
+def adicionar_e_enviar_arquivo():
     # Navegar até o repositório
     os.chdir(REPO_PATH)
 
@@ -26,5 +28,10 @@ def main():
 
     print(f"Arquivo {FILENAME} adicionado e enviado ao repositório!")
 
-if __name__ == "__main__":
-    main()
+# Agendar a execução para começar às 9:00 e repetir a cada 2 horas
+schedule.every().day.at("09:00").do(adicionar_e_enviar_arquivo)
+schedule.every(2).hours.do(adicionar_e_enviar_arquivo)  # Executa a cada 2 horas
+
+while True:
+    schedule.run_pending()  # Verifica se há tarefas pendentes
+    time.sleep(1)  # Atraso de 1 segundo para evitar uso excessivo da CPU

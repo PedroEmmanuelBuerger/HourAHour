@@ -1,10 +1,10 @@
+from unittest.mock import MagicMock, patch, mock_open
 import unittest
-from unittest.mock import patch, mock_open, MagicMock
-import os
-import datetime
 import requests
+import datetime
 import sys
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '../src'))
 import commit_diario
 
 class TestCommitDiario(unittest.TestCase):

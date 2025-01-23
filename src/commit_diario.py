@@ -1,8 +1,6 @@
 import os
 import datetime
 import subprocess
-import schedule
-import time
 import requests
 
 REPO_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -13,10 +11,12 @@ FILENAME = os.path.join(LOGS_PATH, f"clima_blumenau_{datetime.date.today()}.txt"
 LOG_FILE = os.path.join(REPO_PATH, "commit_diario.log")
 
 def log_event(message):
+    """Registra eventos no arquivo de log."""
     with open(LOG_FILE, "a", encoding="utf-8") as log_file:
         log_file.write(f"{datetime.datetime.now()} - {message}\n")
 
 def obter_clima():
+    """Obtém as informações do clima de Blumenau."""
     try:
         response = requests.get("https://wttr.in/Blumenau?format=%l:+%c+%t")
         response.raise_for_status()
@@ -26,6 +26,7 @@ def obter_clima():
         return "Erro ao obter informações do clima."
 
 def adicionar_e_enviar_arquivo():
+    """Adiciona o arquivo ao Git, faz o commit e envia ao repositório."""
     os.chdir(REPO_PATH)
     clima_info = obter_clima()
 
@@ -39,22 +40,6 @@ def adicionar_e_enviar_arquivo():
 
     log_event(f"Arquivo {os.path.basename(FILENAME)} adicionado e enviado ao repositório!")
 
-log_event("Início do script.")
-
-def tarefa_aleatoria():
-    adicionar_e_enviar_arquivo()
-
-schedule.every().day.at("08:00").do(tarefa_aleatoria)
-schedule.every(1).hours.do(tarefa_aleatoria)
-
 if __name__ == "__main__":
-    log_event("Início do script.")
-    schedule.every().day.at("08:00").do(tarefa_aleatoria)
-    schedule.every(1).hours.do(tarefa_aleatoria)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
-
-
-    
+    log_event("Execução do script iniciada.")
+    adicionar_e_enviar_arquivo()

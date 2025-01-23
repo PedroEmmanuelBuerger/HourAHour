@@ -15,6 +15,7 @@ Lida com erros durante a execução, registrando mensagens no arquivo de log par
 - schedule: Biblioteca para agendamento de tarefas recorrentes.
 - subprocess: Utilizada para integração com comandos do Git.
 - requests: Biblioteca para realizar chamadas HTTP para a API de clima.
+- unitest: Biblioteca do python focada em testes unitários.
 
 ## Principais Aprendizados
 Os principais aprendizados incluem:

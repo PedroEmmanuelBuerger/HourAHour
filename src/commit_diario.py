@@ -47,6 +47,14 @@ def tarefa_aleatoria():
 schedule.every().day.at("08:00").do(tarefa_aleatoria)
 schedule.every(1).hours.do(tarefa_aleatoria)
 
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+if __name__ == "__main__":
+    log_event("Início do script.")
+    schedule.every().day.at("08:00").do(tarefa_aleatoria)
+    schedule.every(1).hours.do(tarefa_aleatoria)
+
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+
+
+    

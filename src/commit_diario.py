@@ -41,5 +41,9 @@ def adicionar_e_enviar_arquivo():
     log_event(f"Arquivo {os.path.basename(FILENAME)} adicionado e enviado ao repositório!")
 
 if __name__ == "__main__":
-    log_event("Execução do script iniciada.")
-    adicionar_e_enviar_arquivo()
+    dia_atual = datetime.datetime.now().weekday()
+    if dia_atual in [5, 6]:
+        log_event("Execução do script interrompida. Hoje é sábado ou domingo. Nenhuma ação foi realizada.")
+    else:
+        log_event("Execução do script iniciada.")
+        adicionar_e_enviar_arquivo()

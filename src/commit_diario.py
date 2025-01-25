@@ -27,12 +27,16 @@ def obter_clima():
 
 def adicionar_e_enviar_arquivo():
     """Adiciona o arquivo ao Git, faz o commit e envia ao repositório."""
+    if datetime.datetime.now().weekday() in [5, 6]:
+        log_event("Script não executado porque hoje é fim de semana.")
+        return
+
     os.chdir(REPO_PATH)
     clima_info = obter_clima()
 
     with open(FILENAME, "w", encoding="utf-8") as file:
         file.write(clima_info)
-
+    subprocess.run(["git", "pull"])
     subprocess.run(["git", "add", FILENAME])
     subprocess.run(["git", "add", LOG_FILE])
     subprocess.run(["git", "commit", "-m", f"Adicionado {os.path.basename(FILENAME)} com condições climáticas de Blumenau"])

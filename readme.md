@@ -1,29 +1,38 @@
 # HourAHour
-HourAHour é um projeto desenvolvido visando fazer o registro das condições climaticas de hora a hora, podendo setar uma região, estado e pais.
 
-## Funcionalidades
-O projeto inclui as seguintes funcionalidades:
-- Obtém informações climáticas em tempo real para Blumenau, SC, utilizando o serviço wttr.in.
-- Cria e atualiza um arquivo de texto com o clima, a hora da execução e o local.
-- Faz commits automáticos para um repositório Git a cada uma hora e diariamente às 08:00.
-- Registra logs detalhados de cada operação em um arquivo commit_diario.log.
-Lida com erros durante a execução, registrando mensagens no arquivo de log para análise posterior.
+HourAHour is a project developed to record weather conditions hourly, allowing you to set a region, state, and country.
 
-## O projeto foi desenvolvido utilizando as seguintes tecnologias:
-- Python: Linguagem principal para desenvolvimento do projeto.
-- wttr.in: API de clima para obter informações meteorológicas de Blumenau.
-- schedule: Biblioteca para agendamento de tarefas recorrentes.
-- subprocess: Utilizada para integração com comandos do Git.
-- requests: Biblioteca para realizar chamadas HTTP para a API de clima.
-- unitest: Biblioteca do python focada em testes unitários.
+## Features
 
-## Principais Aprendizados
-Os principais aprendizados incluem:
-- Automatizar o envio de contribuições para um repositório Git, reduzindo a necessidade de ações manuais.
-- Utilizar APIs públicas para obter informações externas (como clima) e integrá-las ao fluxo de trabalho.
-- Configurar e gerenciar tarefas recorrentes com a biblioteca schedule.
-Registrar eventos e mensagens de erro em logs persistentes para facilitar a análise e depuração.
-- Aplicar boas práticas de codificação em Python, incluindo manuseio de encoding para evitar problemas com caracteres Unicode.
+The project includes the following features:
 
-## Conclusão
-Commit Diário Automático é uma ferramenta prática para automatizar a criação de commits em um repositório Git, registrando informações de clima em tempo real. O projeto destaca conceitos importantes de automação, integração com APIs, gerenciamento de logs e agendamento de tarefas, proporcionando uma solução eficiente e confiável para manter um histórico atualizado no Git.
+- Retrieves real-time weather information for Blumenau, SC, using the wttr.in service.
+- Creates and updates a text file with weather details, execution time, and location.
+- Performs automatic commits to a Git repository every hour and daily at 08:00.
+- Logs detailed records of each operation in a `commit_diario.log` file.
+- Handles errors during execution, logging messages for later analysis.
+
+## Technologies Used
+
+The project was developed using the following technologies:
+
+- **Python**: Primary programming language for the project.
+- **wttr.in**: Weather API to fetch meteorological information for Blumenau.
+- **schedule**: Library for scheduling recurring tasks.
+- **subprocess**: Used for integrating with Git commands.
+- **requests**: Library for making HTTP calls to the weather API.
+- **unittest**: Python library focused on unit testing.
+
+## Key Learnings
+
+Key takeaways from this project include:
+
+- Automating Git contributions to reduce the need for manual actions.
+- Using public APIs to fetch external information (such as weather) and integrating it into workflows.
+- Configuring and managing recurring tasks using the `schedule` library.
+- Logging events and error messages in persistent logs to facilitate debugging and analysis.
+- Applying Python coding best practices, including handling encoding to avoid issues with Unicode characters.
+
+## Conclusion
+
+HourAHour is a practical tool for automating the creation of commits in a Git repository, recording real-time weather information. The project highlights important concepts such as automation, API integration, log management, and task scheduling, providing an efficient and reliable solution to maintain an up-to-date Git history.

@@ -22,8 +22,9 @@ def obter_clima():
         response.raise_for_status()
         return f"Local e Clima: {response.text.strip()}\nHora: {datetime.datetime.now()}\n"
     except requests.RequestException as e:
-        log_event(f"Erro ao obter clima: {e}")
-        return "Erro ao obter informações do clima."
+        error_message = f"Erro ao obter clima: {e}\nTimestamp: {datetime.datetime.now()}\n"
+        log_event(error_message)
+        return error_message
 
 def adicionar_e_enviar_arquivo():
     """Adiciona o arquivo ao Git, faz o commit e envia ao repositório."""

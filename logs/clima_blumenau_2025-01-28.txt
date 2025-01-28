@@ -1,1 +1,2 @@
-Erro ao obter informações do clima.
+Local e Clima: Blumenau: ⛅️  +25°C
+Hora: 2025-01-28 09:00:26.942314

@@ -37,7 +37,7 @@ def adicionar_e_enviar_arquivo():
 
     with open(FILENAME, "w", encoding="utf-8") as file:
         file.write(clima_info)
-    subprocess.run(["git", "pull"])
+    subprocess.run(["git", "pull", "--rebase"])
     subprocess.run(["git", "add", FILENAME])
     subprocess.run(["git", "add", LOG_FILE])
     subprocess.run(["git", "commit", "-m", f"Adicionado {os.path.basename(FILENAME)} com condições climáticas de Blumenau"])

@@ -1,2 +1,2 @@
-Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x70371ee90970>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
-Timestamp: 2025-02-06 09:00:01.695999
+Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x70935cf90970>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+Timestamp: 2025-02-06 10:00:01.976075

@@ -1,2 +1,2 @@
-Local e Clima: Blumenau: ⛅️  +26°C
-Hora: 2025-02-11 02:00:31.616992
+Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x754c70a48970>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Timestamp: 2025-02-11 03:00:31.655448

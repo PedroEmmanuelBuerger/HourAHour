@@ -1,2 +1,2 @@
-Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x753794f98970>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-Timestamp: 2025-02-17 04:00:21.847509
+Local e Clima: Blumenau: 🌫  +22°C
+Hora: 2025-02-17 05:00:19.228880

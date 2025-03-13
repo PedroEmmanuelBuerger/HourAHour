@@ -1,2 +1,2 @@
-Local e Clima: Blumenau: ⛅️  +28°C
-Hora: 2025-03-13 19:00:14.575408
+Erro ao obter clima: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Timestamp: 2025-03-13 20:01:32.871653

@@ -1,2 +1,2 @@
-Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x763c7b848970>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
-Timestamp: 2025-03-17 18:42:20.148850
+Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x734187f1c970>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+Timestamp: 2025-03-17 18:47:00.243195

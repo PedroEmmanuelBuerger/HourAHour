@@ -12,7 +12,7 @@ The project includes the following features:
 - Logs detailed records of each operation in a `commit_diario.log` file.
 - Handles errors during execution, logging messages for later analysis.
 
-## Technologies Used
+## Technologies Useds
 
 The project was developed using the following technologies:
 

@@ -1,2 +1,2 @@
-Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by SSLError(SSLError(1, '[SSL: DECRYPTION_FAILED_OR_BAD_RECORD_MAC] decryption failed or bad record mac (_ssl.c:2578)')))
-Timestamp: 2025-03-25 08:00:32.941498
+Local e Clima: Blumenau: ⛅️  +23°C
+Hora: 2025-03-25 09:00:16.661621

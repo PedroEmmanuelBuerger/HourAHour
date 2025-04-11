@@ -1,2 +1,2 @@
-Erro ao obter clima: 404 Client Error: Not Found for url: https://wttr.in/Blumenau?format=%25l:+%25c+%25t
-Timestamp: 2025-04-11 13:00:38.576789
+Local e Clima: Blumenau: ⛅️  +26°C
+Hora: 2025-04-11 14:00:18.465202

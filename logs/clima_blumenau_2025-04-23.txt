@@ -1,2 +1,2 @@
-Local e Clima: Blumenau: ⛅️  +22°C
-Hora: 2025-04-23 03:00:21.642933
+Erro ao obter clima: 404 Client Error: Not Found for url: https://wttr.in/Blumenau?format=%25l:+%25c+%25t
+Timestamp: 2025-04-23 04:00:25.705462

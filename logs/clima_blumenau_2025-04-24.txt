@@ -1,2 +1,2 @@
-Erro ao obter clima: HTTPSConnectionPool(host='wttr.in', port=443): Max retries exceeded with url: /Blumenau?format=%25l:+%25c+%25t (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1007)')))
-Timestamp: 2025-04-24 00:00:13.363663
+Local e Clima: Blumenau: 🌫  +22°C
+Hora: 2025-04-24 01:00:26.049280

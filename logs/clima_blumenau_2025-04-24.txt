@@ -1,2 +1,2 @@
-Local e Clima: Blumenau: 🌦   +23°C
-Hora: 2025-04-24 20:00:26.129933
+Local e Clima: Unknown location; please try ~-26.9195567,-49.0658025
+Hora: 2025-04-24 21:00:18.644775
